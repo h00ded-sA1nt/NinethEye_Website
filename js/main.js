@@ -95,42 +95,46 @@ hamburger.addEventListener("click", () => {
 });
 
 // Form submission handler
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (e) {
+document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault();
-
     const formData = new FormData(this);
-
+    
     fetch("php/send-email.php", {
-      method: "POST",
-      body: formData,
+        method: "POST",
+        body: formData,
     })
-      .then((response) => response.json())
-      .then((data) => {
+    .then((response) => response.json())
+    .then((data) => {
         Toastify({
-          text: data.message,
-          duration: 3000,
-          gravity: "top",
-          position: "right",
-          style: {
-            background: data.status === "success" ? "#4CAF50" : "#f44336",
-          },
+            text: data.message,
+            duration: 3000,
+            gravity: "top",
+            position: "right",
+            style: {
+                background: 'var(--light-navy)',
+                color: 'var(--text-color)',
+                fontSize: '14px',
+                fontFamily: 'Montserrat, sans-serif',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+                border: '1px solid var(--accent-color)',
+                borderRadius: '4px',
+                padding: '12px 20px'
+            }
         }).showToast();
-
+        
         if (data.status === "success") {
-          document.getElementById("contact-form").reset();
+            document.getElementById("contact-form").reset();
         }
-      })
-      .catch((error) => {
+    })
+    .catch((error) => {
         Toastify({
-          text: "An error occurred while sending the message",
-          duration: 3000,
-          gravity: "top",
-          position: "right",
-          style: {
-            background: "#f44336",
-          },
+            text: "An error occurred while sending the message",
+            duration: 3000,
+            gravity: "top",
+            position: "right",
+            style: {
+                background: "#f44336",
+            },
         }).showToast();
-      });
-  });
+    });
+});
