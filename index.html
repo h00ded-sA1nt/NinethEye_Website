@@ -1,100 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NinethEye AI Solutions - Innovative AI Services</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">NinethEye</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="images/thelogo.png" alt="NinethEye Logo" />
+          Nineth Eye
+        </a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <h1>Transforming Business Through AI Innovation</h1>
-            <p>Empowering enterprises with cutting-edge AI solutions and intelligent automation</p>
-            <a href="#contact" class="cta-button">Get Started</a>
-        </div>
+      <div class="container">
+        <h1>Transforming Business Through AI Innovation</h1>
+        <p>
+          Empowering enterprises with cutting-edge AI solutions and intelligent
+          automation
+        </p>
+        <a href="#contact" class="cta-button">Get Started</a>
+      </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <!-- Service cards will be populated via JavaScript -->
-            </div>
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <!-- Service cards will be populated via JavaScript -->
         </div>
+      </div>
     </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2>Our Portfolio</h2>
-            <div class="portfolio-grid">
-                <!-- Portfolio items will be populated via JavaScript -->
-            </div>
+      <div class="container">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-grid">
+          <!-- Portfolio items will be populated via JavaScript -->
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <p>Ready to transform your business with AI? Contact us today!</p>
-                    <div class="contact-details">
-                        <p><i class="fas fa-envelope"></i> contact@ninetheye.com</p>
-                    </div>
-                </div>
-                <form id="contact-form" action="php/send-email.php" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="name" required placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" required placeholder="Your Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="subject" required placeholder="Subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" required placeholder="Your Message"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>Ready to transform your business with AI? Contact us today!</p>
+            <div class="contact-details">
+              <p><i class="fas fa-envelope"></i> contact@ninetheye.com</p>
             </div>
+          </div>
+          <form id="contact-form" action="php/send-email.php" method="POST">
+            <div class="form-group">
+              <input type="text" name="name" required placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="subject"
+                required
+                placeholder="Subject"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                required
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
         </div>
+      </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 NinethEye AI Solutions. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2024 NinethEye AI Solutions. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
