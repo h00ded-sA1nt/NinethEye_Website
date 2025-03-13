@@ -404,11 +404,31 @@ footer p {
 @media (max-width: 768px) {
   .nav-links {
     display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: var(--primary-color);
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 10px 0;
   }
 
   .hamburger {
     display: block;
     cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
   }
 
   .hamburger span {
@@ -418,6 +438,19 @@ footer p {
     background-color: var(--accent-color);
     margin: 5px 0;
     transition: all 0.3s ease;
+  }
+  
+  /* Animation for hamburger menu */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
   }
 
   .contact-wrapper {
