@@ -81,12 +81,33 @@ footer p {
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--accent-color);
   text-decoration: none;
   letter-spacing: 1px;
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-main {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.logo-sub {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .logo img {
